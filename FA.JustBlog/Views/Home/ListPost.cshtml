@@ -1,6 +1,9 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    ViewBag.Title = "ListPost";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 
 <!-- Page Header -->
 <header class="masthead" style="background-image: url('/Content/Assets/img/home-bg.jpg')">
@@ -9,8 +12,8 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>Clean Blog</h1>
-                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                    <h1>List post</h1>
+                   
                 </div>
             </div>
         </div>
@@ -26,7 +29,7 @@
                 <div class="post-preview">
                     <a href="/Home/Detail/@item.id_post">
                         <h2 class="post-title">
-                           @item.title
+                            @item.title
                         </h2>
                         <h3 class="post-subtitle">
                             @item.desShort
@@ -41,10 +44,7 @@
                 <hr>
             }
 
-            <!-- Pager -->
-            <div class="clearfix">
-                <a class="btn btn-primary float-right" href="/Home/ListPost">Older Posts &rarr;</a>
-            </div>
         </div>
     </div>
 </div>
+

@@ -212,45 +212,6 @@
                                     index++;
                                 }
                                 <!-- Modal Add-->
-                                <div class="modal fade" id="exampleModalAdd" tabindex="-1"
-                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Thêm mới</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form action="/AdminHome/Add" method="post">
-                                                    <div class="mb-3">
-                                                        <label for="category-film"
-                                                               class="col-form-label">Tiêu đề:</label>
-                                                        <input type="text" class="form-control" id="category-film" name="tieude" required>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="category-film"
-                                                               class="col-form-label">Mô tả ngắn:</label>
-                                                        <input type="text" class="form-control" id="category-film" name="motangan" required>
-                                                    </div>
-                                                    <div class="mb-3">
-                                                        <label for="category-film"
-                                                               class="col-form-label">Nội dung:</label>
-                                                        <textarea class="form-control" name="noidung" id="commentt" cols="30" rows="9"></textarea>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">
-                                                            Close
-                                                        </button>
-                                                        <button type="submit" class="btn btn-primary">Save </button>
-                                                    </div>
-                                                </form>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
                                 <!-- Modal Update-->
                             </tbody>
                         </table>
@@ -258,6 +219,45 @@
                 </div>
             </div>
         </main>
+    </div>
+    <div class="modal fade" id="exampleModalAdd" tabindex="-1"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thêm mới</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="/AdminHome/Add" method="post">
+                        <div class="mb-3">
+                            <label for="category-film"
+                                   class="col-form-label">Tiêu đề:</label>
+                            <input type="text" class="form-control" id="category-film" name="tieude" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="category-film"
+                                   class="col-form-label">Mô tả ngắn:</label>
+                            <input type="text" class="form-control" id="category-film" name="motangan" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="category-film"
+                                   class="col-form-label">Nội dung:</label>
+                            <textarea class="form-control" name="noidung" id="commentt" cols="30" rows="9"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">
+                                Close
+                            </button>
+                            <button type="submit" class="btn btn-primary">Save </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </div>
     <script>
         CKEDITOR.replace("commentt");

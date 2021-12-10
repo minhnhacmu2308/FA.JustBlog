@@ -2356,6 +2356,8 @@
     <Content Include="Views\Modules\Footer.cshtml" />
     <Content Include="Views\AdminHome\Index.cshtml" />
     <Content Include="Views\AdminHome\Login.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
+    <Content Include="Views\Home\ListPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
